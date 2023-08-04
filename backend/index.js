@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 // const route = require("./routes/route");
 var cors = require("cors");
 const app = express();
-const route=require("./routes/route")
+const route = require("./routes/route");
 // const { errorHandler, notFound } = require("./middleware/error.js");
 // const path = require("path");
 
@@ -11,7 +11,8 @@ const route=require("./routes/route")
 app.use(cors());
 //mongodb+srv://syedkhajafaizuddin786123:<password>@cluster0.g3lt2bq.mongodb.net/?retryWrites=true&w=majority
 mongoose.connect(
-"mongodb://127.0.0.1:27017/UpdatedBilal",  {
+  "mongodb+srv://syedkhajafaizuddin786123:password@cluster0.g3lt2bq.mongodb.net/inote?retryWrites=true&w=majority",
+  {
     useNewUrlParser: true,
     // useFindAndModify: false,
     useUnifiedTopology: true,
@@ -22,10 +23,10 @@ db.on("error", console.error.bind(console, "connection error: "));
 db.once("open", function () {
   console.log("Connected successfully");
 });
-app.use('/',route)
+app.use("/", route);
 app.listen(8000, () => {
-    console.log("server started")
-})
+  console.log("server started");
+});
 // getNotes()
 // notes()
-// kjnkbv zkjvb zvnl 
+// kjnkbv zkjvb zvnl
