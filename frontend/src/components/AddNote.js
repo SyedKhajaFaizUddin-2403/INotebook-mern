@@ -25,7 +25,7 @@ const user=data.id
     const handleClick = async (req, res) => {
           const { title, description, tag} = note;
 
-        axios.post("http://localhost:8000/addnotes", {
+        axios.post("https://inote-mern-back.onrender.com", {
             user:user,title:title,description:description,tag:tag
         }).then((res) => {
           alert("note added successfully")

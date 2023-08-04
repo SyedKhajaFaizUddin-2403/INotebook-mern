@@ -19,7 +19,7 @@ function Map() {
 const [var1,setVar]=useState("")
     useEffect(() => {
         axios
-          .post("http://localhost:8000/getnotes", {
+          .post("https://inote-mern-back.onrender.com/getnotes", {
             filter:filter,
             user: id,
           })

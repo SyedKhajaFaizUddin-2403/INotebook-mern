@@ -13,7 +13,7 @@ function NoteItems(props) {
 
 
         // alert(props.id)
-        axios.post('http://localhost:8000/delete', {
+        axios.post('https://inote-mern-back.onrender.com/delete', {
             user: props.id,
             tag: props.tag,
             description: props.description,
