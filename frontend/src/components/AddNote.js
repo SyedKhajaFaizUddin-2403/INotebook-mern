@@ -25,14 +25,20 @@ const user=data.id
     const handleClick = async (req, res) => {
           const { title, description, tag} = note;
 
-        axios.post("https://inote-mern-back.onrender.com", {
-            user:user,title:title,description:description,tag:tag
-        }).then((res) => {
-          alert("note added successfully")
-                  window.location.reload()
-        }).catch((err) => {
-                  console.log("err"+err)
-              })
+        axios
+          .post("https://inote-mern-back.onrender.com/addnotes", {
+            user: user,
+            title: title,
+            description: description,
+            tag: tag,
+          })
+          .then((res) => {
+            alert("note added successfully");
+            window.location.reload();
+          })
+          .catch((err) => {
+            console.log("err" + err);
+          });
 }
     // const handleClick = async (e) => {
     //     e.preventDefault();
