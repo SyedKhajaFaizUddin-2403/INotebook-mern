@@ -11,8 +11,10 @@ const route = require("./routes/route");
 app.use(cors());
 //mongodb+srv://syedkhajafaizuddin786123:<password>@cluster0.g3lt2bq.mongodb.net/?retryWrites=true&w=majority
 // mongodb+srv://syedkhajafaizuddin786123:<password>@cluster0.vdslk4v.mongodb.net/?retryWrites=true&w=majority
+//mongodb+srv://syedkhajafaizuddin786123:<password>@cluster0.vdslk4v.mongodb.net/?retryWrites=true&w=majority
 mongoose.connect(
-  "mongodb+srv://syedkhajafaizuddin786123:password@cluster0.vdslk4v.mongodb.net/inote?retryWrites=true&w=majority",
+  "mongodb+srv://syedkhajafaizuddin786123:password1212@cluster0.xbyhg40.mongodb.net/Inote?retryWrites=true&w=majority",
+
   {
     useNewUrlParser: true,
     // useFindAndModify: false,
